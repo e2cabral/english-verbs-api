@@ -1,0 +1,16 @@
+[{
+  "name": "default",
+  "type": "mongodb",
+  "host": "localhost",
+  "port": "27017",
+  "database": "english",
+  "useUnifiedTopology": "true",
+  "entities": "./src/domain/models/docs/*.doc.js",
+  "synchronize": "true"
+}, {
+  "name": "pg",
+  "type": "postgres",
+  "url": "postgres://postgres:mypassword@localhost:5432/verbs",
+  "entities": "./src/domain/models/entities/*.doc.js",
+  "synchronize": "true"
+}]
